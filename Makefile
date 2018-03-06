@@ -1,6 +1,6 @@
 OWNER_TEAM = ourveryown
 IMAGE_NAME = elixir-azure-cli
-DOCKER_ID_USER = ${OWNER_TEAM}
+DOCKER_ID_USER ?= "ourveryown"
 DOCKER_ID_PASS ?= "unknown"
 
 build:

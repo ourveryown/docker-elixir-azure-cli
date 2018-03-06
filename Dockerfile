@@ -1,6 +1,10 @@
 FROM microsoft/azure-cli
 FROM elixir:1.6.1
 
+# Install Hex+Rebar
+RUN mix local.hex --force && \
+    mix local.rebar --force
+
 # Install Python.
 RUN \
   apt-get update && \
