@@ -1,5 +1,5 @@
 FROM microsoft/azure-cli
-FROM elixir:1.6.1
+FROM elixir:1.6.4
 
 # Install Hex+Rebar
 RUN mix local.hex --force && \
